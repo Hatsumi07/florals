@@ -62,4 +62,5 @@ section {
 }
 .uppercase-light {
   @include uppercase($text-light);
+  background-color: $accent2;
 }
