@@ -21,7 +21,8 @@ section {
   margin: 1em;
 }
 .colors {
-//  @include atoms.set-flex();
+  display: flex;
+  flex-flow: row wrap;
   > h3 {
     width: 100%;
     flex: 1 0 100%;
@@ -37,16 +38,16 @@ section {
   border: 1px solid;
 }
 .primary {
-//  background-color: $primary;
+  background-color: #FFFFFF;
 }
 .accent1 {
-//  background-color: $accent1;
+  background-color: #3E777A;
 }
 .accent2 {
-//  background-color: $accent2;
+  background-color: #6A66A3;
 }
 .text-dark {
-//  background-color: $text-dark;
+  background-color: #FF7094;
 }
 .element {
   border: 1px solid;
