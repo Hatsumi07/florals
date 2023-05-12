@@ -1,16 +1,20 @@
+@import "variables";
+@import "atoms";
+@import "molecules";
+@import "organisms";
 * {
   box-sizing: border-box;
 }
 html {
-//  background-color: $background-color;
+  background-color: $background-color;
   padding: 5%;
 }
 
 body {
-//  font-family: $fonts-body;
+  font-family: $fonts-body;
   font-size: 85%;
-//  color: $text-dark;
-//  background-color: $primary;
+  color: $text-dark;
+  background-color: $primary;
   margin: 0;
   padding: 1em;
 }
@@ -21,8 +25,7 @@ section {
   margin: 1em;
 }
 .colors {
-  display: flex;
-  flex-flow: row wrap;
+  @include set-flex();
   > h3 {
     width: 100%;
     flex: 1 0 100%;
@@ -38,16 +41,16 @@ section {
   border: 1px solid;
 }
 .primary {
-  background-color: #FFFFFF;
+  background-color: $primary;
 }
 .accent1 {
-  background-color: #3E777A;
+  background-color: $accent1;
 }
 .accent2 {
-  background-color: #6A66A3;
+  background-color: $accent2;
 }
 .text-dark {
-  background-color: #FF7094;
+  background-color: $accent3;
 }
 .element {
   border: 1px solid;
@@ -55,8 +58,8 @@ section {
   padding: 1em;
 }
 .uppercase {
-//  @include atoms.uppercase;
+  @include uppercase;
 }
 .uppercase-light {
-//  @include atoms.uppercase($text-light);
+  @include uppercase($text-light);
 }
