@@ -1,174 +1,215 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-/* basic elements */
-html {
-  margin: 0;
-  padding: 0; }
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+h2,
+h3,
+h4 {
+  font-family: "Courgette", cursive;
+  margin: 0; }
 
-body {
-  font: 75% georgia, sans-serif;
-  line-height: 1.88889;
-  color: #555753;
-  background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
-  margin: 0;
-  padding: 0; }
+h1 {
+  background: #3E777A;
+  color: #fff;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em; }
 
-p {
-  margin-top: 0;
-  text-align: justify; }
+h2 {
+  color: #3E777A;
+  font-weight: 900;
+  /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em; }
 
 h3 {
-  font: italic normal 1.4em georgia, sans-serif;
+  font-size: 2.25em;
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
-  margin-bottom: 0;
-  color: #7D775C; }
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0; }
 
-a:link {
-  font-weight: bold;
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0; }
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0; }
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #3E777A;
   text-decoration: none;
-  color: #B7A5DF; }
+  transition: border-color 0.2s ease-in-out; }
 
-a:visited {
-  font-weight: bold;
+a:hover {
+  border-color: #3E777A; }
+
+h2,
+h3,
+h4 {
+  font-family: "Courgette", cursive;
+  margin: 0; }
+
+h1 {
+  background: #3E777A;
+  color: #fff;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em; }
+
+h2 {
+  color: #3E777A;
+  font-weight: 900;
+  /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em; }
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0; }
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0; }
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0; }
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #3E777A;
   text-decoration: none;
-  color: #D4CDDC; }
+  transition: border-color 0.2s ease-in-out; }
 
-a:hover, a:focus, a:active {
-  text-decoration: underline;
-  color: #9685BA; }
+a:hover {
+  border-color: #3E777A; }
 
-abbr {
-  border-bottom: none; }
-
-/* specific divs */
-.page-wrapper {
-  background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;
-  padding: 0 175px 0 110px;
-  margin: 0;
-  position: relative; }
-
-.intro {
-  min-width: 470px;
-  width: 100%; }
-
-header h1 {
-  background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-  margin-top: 10px;
-  display: block;
-  width: 219px;
-  height: 87px;
-  float: left;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; }
-
-header h2 {
-  background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left;
-  margin-top: 58px;
-  margin-bottom: 40px;
-  width: 200px;
-  height: 18px;
-  float: right;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; }
-
-header {
-  padding-top: 20px;
-  height: 87px; }
+[role="banner"] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff; }
 
 .summary {
-  clear: both;
-  margin: 20px 20px 20px 10px;
-  width: 160px;
-  float: left; }
-
-.summary p {
-  font: italic 1.1em/2.2 georgia;
-  text-align: center; }
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15% 0; }
+  .summary p:last-child {
+    border-top: 1px solid #3E777A;
+    margin-top: 1em;
+    padding-top: 1.5em; }
+  .summary a {
+    color: #fff; }
 
 .preamble {
-  clear: right;
-  padding: 0px 10px 0 10px; }
+  background: rgba(255, 255, 255, 0.9);
+  color: #3E777A;
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%; }
 
-.supporting {
-  padding-left: 10px;
-  margin-bottom: 40px; }
+.intro {
+  padding: 5%; }
 
-footer {
-  text-align: center; }
+* {
+  box-sizing: border-box; }
 
-footer a:link, footer a:visited {
-  margin-right: 20px; }
+html {
+  background-color: #e7daed;
+  padding: 5%; }
 
-.sidebar {
-  margin-left: 600px;
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-.sidebar .wrapper {
-  font: 10px verdana, sans-serif;
-  background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y;
-  padding: 10px;
-  margin-top: 150px;
-  width: 130px; }
-
-.sidebar h3.select {
-  background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left;
-  margin: 10px 0 5px 0;
-  width: 97px;
-  height: 16px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; }
-
-.sidebar h3.archives {
-  background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left;
-  margin: 25px 0 5px 0;
-  width: 57px;
-  height: 14px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; }
-
-.sidebar h3.resources {
-  background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left;
-  margin: 25px 0 5px 0;
-  width: 63px;
-  height: 10px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; }
-
-.sidebar ul {
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 85%;
+  color: #3E777A;
+  background-color: #FFFFFF;
   margin: 0;
-  padding: 0; }
+  padding: 1em; }
 
-.sidebar li {
-  line-height: 1.3em;
-  background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center;
-  display: block;
-  padding-top: 5px;
-  margin-bottom: 5px;
-  list-style-type: none; }
+section {
+  background-color: white;
+  padding: 1em;
+  margin: 1em; }
 
-.sidebar li a:link {
-  color: #988F5E; }
+.colors {
+  display: flex;
+  flex-flow: row wrap; }
+  .colors > h3 {
+    width: 100%;
+    flex: 1 0 100%; }
+  .colors > figure {
+    margin: 0;
+    flex: 1 1 25%; }
 
-.sidebar li a:visited {
-  color: #B3AE94; }
+.swatch {
+  width: 100%;
+  height: 100px;
+  border: 1px solid; }
 
-.extra1 {
-  background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  width: 148px;
-  height: 110px; }
+.primary {
+  background-color: #FFFFFF; }
+
+.accent1 {
+  background-color: #3E777A; }
+
+.accent2 {
+  background-color: #6A66A3; }
+
+.text-dark {
+  background-color: #FF7094; }
+
+.element {
+  border: 1px solid;
+  margin: 0.5em;
+  padding: 1em; }
+
+.uppercase {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3E777A; }
+
+.uppercase-light {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6A66A3; }
+
+.barlow {
+  font-family: "Barlow", sans-serif; }
+
+.courgette {
+  font-family: "Courgette", cursive; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
 h2,
 h3,
 h4 {
-  font-family: "arial narrow", Arial, Verdana, sans-serif;
+  font-family: "Courgette", cursive;
   margin: 0; }
 
 h1 {
@@ -37,7 +44,7 @@ h4 {
   margin: 0.5em 0; }
 
 p {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
@@ -55,7 +62,7 @@ a:hover {
 h2,
 h3,
 h4 {
-  font-family: "arial narrow", Arial, Verdana, sans-serif;
+  font-family: "Courgette", cursive;
   margin: 0; }
 
 h1 {
@@ -91,7 +98,7 @@ h4 {
   margin: 0.5em 0; }
 
 p {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
@@ -142,7 +149,7 @@ html {
   padding: 5%; }
 
 body {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 85%;
   color: #3E777A;
   background-color: #FFFFFF;
@@ -198,5 +205,11 @@ section {
   text-transform: uppercase;
   color: #fff;
   background-color: #6A66A3; }
+
+.barlow {
+  font-family: "Barlow", sans-serif; }
+
+.courgette {
+  font-family: "Courgette", cursive; }
 
 /*# sourceMappingURL=style-pattern.css.map */
