@@ -1,18 +1,19 @@
+
+@use 'variables';
+@use 'atoms';
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap');
 
-@import 'variables';
-@import 'atoms';
 
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
 
 .summary {
   a {
-    color: $text-light; //in this case the link wants to be light instead of the default dark
-    font-family: $fonts-headline;
+    color: variables.$text-light; //in this case the link wants to be light instead of the default dark
+    font-family: variables.$fonts-headline;
   }
   p{
-    font-family: $fonts-headline;
+    font-family: variables.$fonts-headline;
     text-align: right;
   }
 }

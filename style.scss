@@ -6,12 +6,12 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap');
 
-@import "variables";
-@import "atoms";
-@import "molecules";
-@import "organisms";
+@use "variables";
+@use "atoms";
+@use "molecules";
+@use "organisms";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap');
 
 /* basic elements */
 body{
@@ -21,9 +21,12 @@ body{
 	@media screen and  (max-width: 700px){
 		background-image: url(images/bannersmall.svg);
 		opacity: 0.7;
+		background-size: 100% auto;
 	}
 	@media  screen and (min-width: 700px){
-		background-image: url(images/banner.svg);		
+		background-image: url(images/banner.svg);	
+		background-size: 100% auto;	
+
 	}
 }
 .preamble, .mainsupporting, .participation, .benefits, .requirements{
@@ -69,7 +72,7 @@ body{
 		text-align: center;
 	}
 	.design-selection, .design-archives, .zen-resources{
-		background-color: $accent3;
+		background-color: variables.$accent3;
 	}
 	button{
 		display: none;
@@ -77,36 +80,3 @@ body{
 }
 
 
-@media screen and  (max-width: 700px){
-	.selectbtn {
-		background-color: $accent1;
-		color: white;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-		cursor: pointer;
-	  }
-	  
-	//   .sidebar {
-	// 	position: relative;
-	// 	display: inline-block;
-	//   }
-	  
-	  .content {
-		display: none;
-		position: absolute;
-		right: 0;
-		background-color: #f9f9f9;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-	  }
-	  
-	  .content a {
-		color: black;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-	  }
-	  	  
-}

@@ -1,7 +1,7 @@
-@import 'variables';
+@use 'variables';
 
 // mixins to take care of repeated patterns.
-@mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
+@mixin set-font($size: 1em, $line-height: normal, $font: variables.$fonts-body) {
   font-family: $font;
   font-size: $size;
   line-height: $line-height;
@@ -12,7 +12,7 @@
   flex-flow: $direction $wrap;
 }
 
-@mixin uppercase($color: $text-dark) {
+@mixin uppercase($color: variables.$text-dark) {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -27,16 +27,16 @@
 h2,
 h3,
 h4 {
-  font-family: $fonts-headline;
+  font-family: variables.$fonts-headline;
   margin: 0;
 }
 h1{
-	@include uppercase($text-dark);
-	font-family: $font-title;
+	@include uppercase(variables.$text-dark);
+	font-family: variables.$font-title;
 	font-size: 4em;
 }
 h2 {
-  color: $text-dark;
+  color: variables.$text-dark;
   font-weight: 400; /* Heavy */
   letter-spacing: 1px;
   line-height: 1em;
@@ -64,10 +64,10 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: $text-dark;
+  color: variables.$text-dark;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
 a:hover {
-  border-color: $accent1;
+  border-color: variables.$accent1;
 }
