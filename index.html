@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page-wrapper">
+    <div class="page-wraher">
       <section class="intro" id="zen-intro">
         <header role="banner">
           <h1>CSS Zen Garden</h1>
@@ -37,6 +37,7 @@
             >
           </p>
         </div>
+      </section>
 
         <div class="preamble" id="zen-preamble" role="article">
           <h3>The Road to Enlightenment</h3>
@@ -61,9 +62,8 @@
             Become one with the web.
           </p>
         </div>
-      </section>
-
-      <div class="main supporting" id="zen-supporting" role="main">
+  
+      <div class="mainsupporting" id="zen-supporting" role="main">
         <div class="explanation" id="zen-explanation" role="article">
           <h3>So What is This About?</h3>
           <p>
@@ -215,6 +215,7 @@
           </p>
         </div>
 
+
         <footer>
           <a
             href="http://validator.w3.org/check/referer"
@@ -251,8 +252,11 @@
 
       <aside class="sidebar" role="complementary">
         <div class="wrapper">
+
           <div class="design-selection" id="design-selection">
-            <h3 class="select">Select a Design:</h3>
+            <button class="selectbtn"> SELECT </button>
+            <div class="content">
+              <h3 class="select">Select a Design:</h3>
             <nav role="navigation">
               <ul>
                 <li>
@@ -305,6 +309,9 @@
                 </li>
               </ul>
             </nav>
+            </div>
+               
+            
           </div>
 
           <div class="design-archives" id="design-archives">

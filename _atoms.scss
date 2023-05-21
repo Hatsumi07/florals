@@ -30,18 +30,14 @@ h4 {
   font-family: $fonts-headline;
   margin: 0;
 }
-h1 {
-  background: $accent1;
-  color: $text-light;
-  display: inline-block;
-  font-weight: normal;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
+h1{
+	@include uppercase($text-dark);
+	font-family: $font-title;
+	font-size: 4em;
 }
 h2 {
   color: $text-dark;
-  font-weight: 900; /* Heavy */
-  font-size: 6em;
+  font-weight: 400; /* Heavy */
   letter-spacing: 1px;
   line-height: 1em;
 }
