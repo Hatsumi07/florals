@@ -59,16 +59,17 @@ body{
 		grid-row: 2/3;
 	}
 }
-.page-wraher::after{
-	content: url(images/bannersmall.jpg);
-	grid-column: 3/4;
-	grid-row: 3/4;
-	max-width: 50px;
-}
-.page-wraher::before{
-	content:url(images/bannersmall.svg);
-	grid-column: 1/2;
-	grid-row: 2/3;
+
+.page-wraher > div:before, .mainsupporting > div:before {
+	content: " ";
+  	position: absolute;
+  	width: 70%;
+  	height: 17%;
+ 	//  z-index: -1;
+  	margin-top: 80px;
+  	margin-left: -200px;
+	background-image: url(images/bannersmall.svg);
+	background-repeat: no-repeat;
 }
 
 
