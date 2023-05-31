@@ -56,11 +56,11 @@ body{
 	}
 }
 
-// .page-wraher>#zen-preamble::before, .mainsupporting > div:nth-child(even):before {
-// 	@include atoms.side-image(70%, 100px, -200px)
-// }
+.page-wraher>#zen-preamble::before, .mainsupporting > div:nth-child(even):before {
+	@include atoms.side-image(70%, 17%, -200px, url(images/bannersmall.svg))
+}
 #zen-requirements::before{
-	@include atoms.side-image(70%, 100px, -200px, url(images/pink.svg))
+	@include atoms.side-image(85%, 60%, -302px, url(images/LongFlower.png))
 }
 
 .mainsupporting > div:nth-child(odd):before{

@@ -130,14 +130,25 @@ body {
   grid-row: 2/3;
 }
 
-#zen-requirements::before {
+.page-wraher > #zen-preamble::before, .mainsupporting > div:nth-child(even):before {
   content: " ";
   position: absolute;
   width: 70%;
-  height: 100px;
+  height: 17%;
   margin-top: 80px;
   margin-left: -200px;
-  background-image: url(images/pink.svg);
+  background-image: url(images/bannersmall.svg);
+  background-repeat: no-repeat;
+}
+
+#zen-requirements::before {
+  content: " ";
+  position: absolute;
+  width: 85%;
+  height: 60%;
+  margin-top: 80px;
+  margin-left: -302px;
+  background-image: url(images/LongFlower.png);
   background-repeat: no-repeat;
 }
 
