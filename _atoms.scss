@@ -23,6 +23,17 @@
   margin-top: 1em;
   padding-top: 1.5em;
 }
+@mixin side-image ( $width, $height, $left, $image ) {
+  content: " ";
+  position: absolute;
+  width: $width;
+  height: $height;
+  margin-top: 80px;
+  margin-left: $left;
+  background-image: $image;
+  background-repeat: no-repeat;
+}
+
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 h2,
 h3,

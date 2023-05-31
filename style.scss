@@ -1,10 +1,6 @@
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 @use "variables";
@@ -60,18 +56,16 @@ body{
 	}
 }
 
-.page-wraher > div:before, .mainsupporting > div:before {
-	content: " ";
-  	position: absolute;
-  	width: 70%;
-  	height: 17%;
- 	//  z-index: -1;
-  	margin-top: 80px;
-  	margin-left: -200px;
-	background-image: url(images/bannersmall.svg);
-	background-repeat: no-repeat;
+// .page-wraher>#zen-preamble::before, .mainsupporting > div:nth-child(even):before {
+// 	@include atoms.side-image(70%, 100px, -200px)
+// }
+#zen-requirements::before{
+	@include atoms.side-image(70%, 100px, -200px, url(images/pink.svg))
 }
 
+.mainsupporting > div:nth-child(odd):before{
+	@include atoms.side-image(70%, 17%, 580px, url(images/bannersmall.svg))
+}
 
 .sidebar{
 	grid-column: span 3;
