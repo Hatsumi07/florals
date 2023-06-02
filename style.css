@@ -1,172 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap"); /* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap");
-h2,
-h3,
-h4 {
-  font-family: "Courgette", cursive;
-  margin: 0;
-}
+/*
+Error: Invalid CSS after "...olor: variables": expected ";", was ".$accent3;"
+        on line 82 of style.scss
 
-h1 {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #3E777A;
-  font-family: "Forum";
-  font-size: 4em;
-}
+77: 	column-gap: 2em;
+78: 	h3{
+79: 		text-align: center;
+80: 	}
+81: 	.design-selection, .design-archives, .zen-resources{
+82: 		background-color: variables.$accent3;
+83: 	}
+84: }
 
-h2 {
-  color: #3E777A;
-  font-weight: 400; /* Heavy */
-  letter-spacing: 1px;
-  line-height: 1em;
-}
-
-h3 {
-  font-size: 2.25em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
-}
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0;
-}
-
-p {
-  font-family: "Barlow", sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  padding: 0.5em 0;
-  margin: 0;
-}
-
-a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #3E777A;
-  text-decoration: none;
-  transition: border-color 0.2s ease-in-out;
-}
-
-a:hover {
-  border-color: #3E777A;
-}
-
-.summary a {
-  color: #150606;
-  font-family: "Courgette", cursive;
-}
-.summary p {
-  font-family: "Courgette", cursive;
-  text-align: right;
-}
-
-.preamble {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.intro {
-  padding: 2%;
-}
-
-/* basic elements */
-body {
-  padding: 2em;
-}
-
-@media screen and (max-width: 700px) {
-  .intro {
-    background-image: url(images/bannersmall.svg);
-    opacity: 0.7;
-    background-size: 100% auto;
-  }
-}
-@media screen and (min-width: 700px) {
-  .intro {
-    background-image: url(images/banner.svg);
-    background-size: 100% auto;
-    grid-column: span 3;
-    grid-row: 1/2;
-  }
-}
-
-.preamble, .mainsupporting, .participation, .benefits, .requirements {
-  text-align: justify;
-}
-.preamble h3, .mainsupporting h3, .participation h3, .benefits h3, .requirements h3 {
-  text-align: left;
-}
-@media screen and (max-width: 700px) {
-  .preamble, .mainsupporting, .participation, .benefits, .requirements {
-    text-align: right;
-  }
-  .preamble p, .mainsupporting p, .participation p, .benefits p, .requirements p {
-    text-align: justify;
-  }
-}
-
-.page-wraher {
-  display: grid;
-  grid-template-columns: 22% 1fr 22%;
-  grid-gap: 1em;
-}
-.page-wraher > .preamble, .page-wraher .mainsupporting, .page-wraher footer {
-  grid-column: 2/3;
-}
-.page-wraher .intro {
-  grid-row: 1/2;
-}
-.page-wraher .preamble {
-  grid-row: 2/3;
-}
-
-#zen-requirements::before {
-  content: " ";
-  position: absolute;
-  width: 70%;
-  height: 100px;
-  margin-top: 80px;
-  margin-left: -200px;
-  background-image: url(images/pink.svg);
-  background-repeat: no-repeat;
-}
-
-.mainsupporting > div:nth-child(odd):before {
-  content: " ";
-  position: absolute;
-  width: 70%;
-  height: 17%;
-  margin-top: 80px;
-  margin-left: 580px;
-  background-image: url(images/bannersmall.svg);
-  background-repeat: no-repeat;
-}
-
-.sidebar {
-  grid-column: span 3;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  padding: 1em;
-  column-gap: 2em;
-}
-.wrapper h3 {
-  text-align: center;
-}
-.wrapper .design-selection, .wrapper .design-archives, .wrapper .zen-resources {
-  background-color: #f2becb;
-}
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:82
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$accent3;\"\A         on line 82 of style.scss\A \A 77: 	column-gap: 2em;\A 78: 	h3{\A 79: 		text-align: center;\A 80: 	}\A 81: 	.design-selection, .design-archives, .zen-resources{\A 82: 		background-color: variables.$accent3;\A 83: 	}\A 84: }"; }

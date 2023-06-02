@@ -3,10 +3,10 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-@use "variables";
-@use "atoms";
-@use "molecules";
-@use "organisms";
+@use "_variables";
+@use "_atoms";
+@use "_molecules";
+@use "_organisms";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Courgette&family=Forum&display=swap');
 
 /* basic elements */
@@ -60,11 +60,11 @@ body{
 // 	@include atoms.side-image(70%, 100px, -200px)
 // }
 #zen-requirements::before{
-	@include atoms.side-image(70%, 100px, -200px, url(images/pink.svg))
+	@include side-image(70%, 100px, -200px, url(images/pink.png))
 }
 
 .mainsupporting > div:nth-child(odd):before{
-	@include atoms.side-image(70%, 17%, 580px, url(images/bannersmall.svg))
+	@include side-image(70%, 17%, 580px, url(images/bannersmall.svg))
 }
 
 .sidebar{
