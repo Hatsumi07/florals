@@ -93,7 +93,7 @@ body {
 }
 @media screen and (min-width: 700px) {
   .intro {
-    background-image: url(images/banner.svg);
+    background-image: url(images/banneropaque.png);
     background-size: 100% auto;
     grid-column: span 3;
     grid-row: 1/2;
@@ -130,15 +130,52 @@ body {
   grid-row: 2/3;
 }
 
-.page-wraher > #zen-preamble::before, .mainsupporting > div:nth-child(even):before {
+#zen-preamble::before {
   content: " ";
   position: absolute;
-  width: 70%;
-  height: 17%;
+  width: 250px;
+  height: 200px;
   margin-top: 80px;
-  margin-left: -200px;
-  background-image: url(images/bannersmall.svg);
+  margin-left: -290px;
+  background-image: url(images/singlerose.png);
   background-repeat: no-repeat;
+  animation: appear 10s linear infinite;
+}
+
+#zen-explanation::before {
+  content: " ";
+  position: absolute;
+  width: 25%;
+  height: 35%;
+  margin-top: 80px;
+  margin-left: 850px;
+  background-image: url(images/yellowflower.png);
+  background-repeat: no-repeat;
+  animation: appear 10s linear infinite;
+}
+
+#zen-participation::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  margin-left: -290px;
+  background-image: url(images/lightpinkpeony.png);
+  background-repeat: no-repeat;
+  animation: appear 10s linear infinite;
+}
+
+#zen-benefits::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  margin-left: 850px;
+  background-image: url(images/mediumpinkpeony.png);
+  background-repeat: no-repeat;
+  animation: appear 10s linear infinite;
 }
 
 #zen-requirements::before {
@@ -147,22 +184,23 @@ body {
   width: 85%;
   height: 60%;
   margin-top: 80px;
-  margin-left: -302px;
+  margin-left: -350px;
   background-image: url(images/LongFlower.png);
   background-repeat: no-repeat;
+  animation: appear 10s linear infinite;
 }
 
-.mainsupporting > div:nth-child(odd):before {
-  content: " ";
-  position: absolute;
-  width: 70%;
-  height: 17%;
-  margin-top: 80px;
-  margin-left: 580px;
-  background-image: url(images/bannersmall.svg);
-  background-repeat: no-repeat;
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
 .sidebar {
   grid-column: span 3;
 }

@@ -20,7 +20,7 @@ body{
 		background-size: 100% auto;
 	}
 	@media  screen and (min-width: 700px){
-		background-image: url(images/banner.svg);	
+		background-image: url(images/banneropaque.png);	
 		background-size: 100% auto;	
 		grid-column: span 3;
 		grid-row: 1/2;
@@ -56,16 +56,51 @@ body{
 	}
 }
 
-.page-wraher>#zen-preamble::before, .mainsupporting > div:nth-child(even):before {
-	@include atoms.side-image(70%, 17%, -200px, url(images/bannersmall.svg))
+// .page-wraher>#zen-preamble::before, .mainsupporting > div:nth-child(even):before {
+// 	@include atoms.side-image(70%, 17%, -200px, url(images/bannersmall.svg))
+// }
+#zen-preamble::before{
+	@include atoms.side-image(250px, 200px, -290px, url(images/singlerose.png));
+	animation: appear 10s linear infinite;
 }
-#zen-requirements::before{
-	@include atoms.side-image(85%, 60%, -302px, url(images/LongFlower.png))
+#zen-explanation::before{
+	@include atoms.side-image(25%, 35%, 850px, url(images/yellowflower.png));
+	animation: appear 10s linear infinite;
 }
 
-.mainsupporting > div:nth-child(odd):before{
-	@include atoms.side-image(70%, 17%, 580px, url(images/bannersmall.svg))
+#zen-participation::before{
+	@include atoms.side-image(100%, 100%, -290px, url(images/lightpinkpeony.png));
+	animation: appear 10s linear infinite;
 }
+#zen-benefits::before{
+	@include atoms.side-image(100%, 100%, 850px, url(images/mediumpinkpeony.png));
+	animation: appear 10s linear infinite;
+}
+
+#zen-requirements::before{
+	@include atoms.side-image(85%, 60%, -350px, url(images/LongFlower.png));
+	animation: appear 10s linear infinite;
+}
+@keyframes appear {
+	0% {
+		opacity: 0;
+	  }
+	  50% {
+		opacity: 1;
+	  }
+	  100% {
+		opacity: 0;
+	  }
+  }
+//   @keyframes appear {
+// 	0% {
+// 	  background-position: 0 0;
+// 	}
+// 	100% {
+// 	  background-position: 100% 0;
+// 	}
+//   }
+
 
 .sidebar{
 	grid-column: span 3;
